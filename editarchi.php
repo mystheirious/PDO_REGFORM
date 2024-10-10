@@ -23,7 +23,7 @@
 <body>
 	<?php $getArchiByID = getArchiByID($pdo, $_GET['architectID']); ?>
 	<form action="core/handleForms.php?architectID=<?php echo $_GET['architectID']; ?>" method="POST">
-		<h3>Edit this record of an architect with an ID of <?php echo $getArchiByID['architectID'];?>: </h3>
+		<h3>Editing the record of an architect with an ID of <?php echo $getArchiByID['architectID'];?>: </h3>
 		<p>
 			<label for="firstName">First Name</label> 
 			<input type="text" name="firstName" value="<?php echo $getArchiByID['firstName']; ?>">
